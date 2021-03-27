@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1> hey I am here</h1>
+    <header class="header">
+        <div class="header__logo">Node.Js News Page</div>
+    
+    </header>
+    
+    <div class="wrapper">
+        <div class="news">
+            <% if(articles != null) { %>
+            <% articles.forEach(function(article, index) { %>
+                <!-- <a href="/article/<%- article.source.id %>" class="news__card"> -->
+                    <img src="<%- article.urlToImage %>" alt="<%- article.title %>" width="50%">
+                    <h2><%- JSON.stringify(article.title) %></h2>
+                    <p><%- article.description %></p>
+                   
+
+                </a>
+            <% }) %>
+            <% } else { %>
+                Sorry We did not find any post Today. Please Try again later..
+            <% } %>
+        </div>
+    </div>  
+
 </body>
 </html>
+
