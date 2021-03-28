@@ -22,7 +22,7 @@
                 <% console.log(articles,"i am in if") %> 
             <% articles.forEach(function(article, index) { %>
                 <a href="<%- article.url %>" class="news__card">
-                    <img src="<%- article.urlToImage %>" alt="<%- article.title %>" >
+                    <img src="<%- article.urlToImage %>" alt="Image not found" onerror="this.src='/img/news.jpg'">
                     <h2><%- JSON.stringify(article.title) %></h2>
                     <p><%- article.description %></p>
                 </a>
