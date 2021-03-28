@@ -1,3 +1,4 @@
 # news-app
 News-app based on Nodejs and Express.
-Development in process.
+Application will pop up daily news. 
+Demo: https://dailynewsapp.herokuapp.com/
