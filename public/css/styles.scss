@@ -35,7 +35,7 @@ h2 { font-size: 1.6rem; }
 
 .news {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-gap: 2rem;
 
     &__card {
@@ -45,14 +45,14 @@ h2 { font-size: 1.6rem; }
         padding: 20px;
 
         &:hover {
-            box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 3px rgba(8, 7, 7, 0.16), 0 3px 3px rgba(0,0,0,0.23);
         }
         
     }
 }
 
 .news-single {
-    background-color: #fff;
+    background-color: rgb(46, 40, 40);
     max-width: 1300px;
     margin: 0 auto;
     padding: 2rem;

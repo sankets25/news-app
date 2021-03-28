@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js News</title>
     <link rel="stylesheet" href="/css/styles.css">
@@ -10,33 +9,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">Node.Js News Page</div>
-        <div class="header__search">
-
-        <form action="/" method="POST">
-            <input type="text" name="search" placeholder="Search news" required>
-            <input type="submit" value="Search"> 
-
-        </form>
-        </div>
+        <div class="header__logo">Node.Js News</div>
+        
     </header>
-    
+
     <div class="wrapper">
         <div class="news">
-            <% if(articles != null)  { %>
-            <% articles.forEach(function(article, index) {%>
+            <% if(articles != null) { %>
+            <% articles.forEach(function(article, index) { %>
                 <a href="<%- article.url %>" class="news__card">
                     <img src="<%- article.urlToImage %>" alt="<%- article.title %>" >
                     <h2><%- JSON.stringify(article.title) %></h2>
                     <p><%- article.description %></p>
-                </a>   
-            <% }) %> 
-            <% } else { %> 
-                No page loaded.
-            <% } %> 
+                </a>
+            <% }) %>
+            <% } else { %>
+                No posts found.
+            <% } %>
         </div>
     </div>  
-
 </body>
-</html>
-
+</html> 

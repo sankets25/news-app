@@ -47,8 +47,8 @@ h2 {
 .news {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  -ms-grid-columns: (minmax(290px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -60,12 +60,12 @@ h2 {
 }
 
 .news__card:hover {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 3px rgba(8, 7, 7, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 3px rgba(8, 7, 7, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
 
 .news-single {
-  background-color: #fff;
+  background-color: #2e2828;
   max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
