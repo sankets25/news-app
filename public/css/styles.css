@@ -44,7 +44,7 @@ h2 {
   padding: 0 1rem;
 }
 
-.news {
+.news { `
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(290px, 1fr))[auto-fill];
@@ -55,7 +55,7 @@ h2 {
 .news__card {
   text-decoration: none;
   color: #080808;
-  background-color: #c9bbbb;
+  background-color: #c9bdbd;
   padding: 20px;
 }
 
