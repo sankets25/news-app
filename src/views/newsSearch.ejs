@@ -17,9 +17,9 @@
 
     <div class="wrapper">
         <div class="news">
-            <% console.log(articles.title,"sanket") %> 
+           
             <% if(articles != []) { %>
-                <% console.log(articles,"i am in if") %> 
+                
             <% articles.forEach(function(article, index) { %>
                 <a href="<%- article.url %>" class="news__card">
                     <img src="<%- article.urlToImage %>" alt="Image not found" onerror="this.src='/img/news.jpg'">
