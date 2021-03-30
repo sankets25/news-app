@@ -18,7 +18,7 @@
     <div class="wrapper">
         <div class="news">
            
-            <% if(articles != []) { %>
+            <% if(articles.length != 0) { %>
                 
             <% articles.forEach(function(article, index) { %>
                 <a href="<%- article.url %>" class="news__card">
