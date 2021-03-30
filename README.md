@@ -1,4 +1,5 @@
 # news-app
-News-app based on Nodejs, Express Js and News API.
-Application will pop up daily news headlines. 
-Link to my application: https://dailynewsapp.herokuapp.com/
+• Built Node.js based News App by fetching data from News API with search feature allowing users to search for news of their choice.
+• Coded the front-end in vanilla JS along with HTML and CSS for a responsive design.
+
+You can check my app [here](https://dailynewsapp.herokuapp.com/)
