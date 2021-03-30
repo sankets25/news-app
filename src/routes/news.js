@@ -4,7 +4,7 @@ const axios = require('axios')
 
 newsRouter.get('', async(req, res) => {
     try {
-        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=30cddb311c744fd38d05a6a0bfcfbe93`)
+        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY`)
         res.render('news', { articles : newsAPI.data.articles })
         
     } catch (error) {
@@ -29,7 +29,7 @@ newsRouter.get('', async(req, res) => {
 newsRouter.post('', async(req, res) => {
     let search = req.body.search
     try {
-        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=30cddb311c744fd38d05a6a0bfcfbe93&q=${search}`)
+        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY&q=${search}`)
         // console.log(newsAPI.data.articles)
 
         res.render('newsSearch', { articles : newsAPI.data.articles })
