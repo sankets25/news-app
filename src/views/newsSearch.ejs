@@ -6,12 +6,21 @@
     <title>Node.js News</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="https://dailynewsapp.herokuapp.com/">News Page</a>
+            <button class="button button2" onclick="window.location.href='https://dailynewsapp.herokuapp.com/'"><i class="fa fa-home"></i> News </button>
         </div>
+        <div class="header__search">
+
+            <form action="/" method="POST">
+                <input type="text" name="search" placeholder="Search news" required>
+                <input type="submit" value="Search"> 
+    
+            </form>
+            </div>
         
     </header>
 
@@ -29,7 +38,10 @@
             <% }) %>
             <% } else { %>
                 
-                Please search for something else.
+                     <div class="alert alert-info">
+                        <strong>Info!</strong> You did not get any search result. Please go back to home to watch headlines.
+                      </div>
+                
             <% } %>
         </div>
     </div>  
