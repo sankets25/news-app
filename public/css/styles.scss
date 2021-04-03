@@ -4,6 +4,7 @@ body {
     background-color: #f6f6f6;
 }
 
+
 img { max-width: 100%; }
 h2 { font-size: 1.6rem; }
 
@@ -31,6 +32,21 @@ h2 { font-size: 1.6rem; }
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .header {
+        display: block !important;
+    }
+    .header__search form {
+        display: flex;
+        input[type = text] {
+            width: 100%;
+        }
+        input[type = submit] {
+            width: 30%;
+        }
+    }
+  }
+
 .wrapper { padding: 0 1rem }
 
 .news {
@@ -51,12 +67,7 @@ h2 { font-size: 1.6rem; }
     }
 }
 
-// .news-single {
-//     background-color: rgb(46, 40, 40);
-//     max-width: 1300px;
-//     margin: 0 auto;
-//     padding: 2rem;
-// }
+
 .btn {
     background-color: rgb(106, 168, 153);
     border: none;
@@ -90,3 +101,6 @@ h2 { font-size: 1.6rem; }
   .button2:hover {
     box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
+
+  
